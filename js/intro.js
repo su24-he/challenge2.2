@@ -7,11 +7,28 @@ $(document).ready(function(){
         $("#box").toggle();
     });
 
-    $("#box").click(function(){
-        $(this).animate({width:"50%"}, 500);
+    $('#box').click(function () {
+            $(this).css("animation", "box 10s infinite");
     });
+    
+
 
     $("#name").click(function(){
-        $("#box").css("background-color", "white");
+        $("#box").css({
+            "background-color": "blue",
+            "border-radius": "50%",  
+            "width": "100px",   
+            "height": "100px" 
+
+        });
+        
     });
+
+    $("#reset-btn").click(function () {
+        $("#box").hide();
+        $("#box").css("width", ""); 
+        $("#box").css("background-color", ""); 
+        $("#box").css("animation", "");
+    });
+
 });

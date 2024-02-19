@@ -11,11 +11,56 @@
 }
 
 #welcome-text{
+    padding-top: 4%;
+}
+h2{
+    text-align: center;
+}
+#name{
     padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+
+#toggle-btn{
+    margin: 0 auto;
+    display: block;
+      
+}
+
+#reset-btn {
+    margin: 0 auto;
+    display: block;
+    padding-top: 15%;  
+}
+
+@keyframes box {
+    0%   {left: 0;}
+    25%  {left: 25%;}
+    50%  {left: 50%;}
+    75%  {left: 75%;}
+    100% {left: 100%;}
+}
+
+.animation-#box {
+    animation:10s infinite;
 }
 
 #box {
-        background-color: lightblue;
-        margin: 40px;
-        padding: 100px;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+
+    background-color: rgb(37, 39, 40);
+    margin: 40px;
+    height: 100px;
+    width: 100px;
+
+    border: none; 
+    box-sizing: content-box; 
+
+
 }
+
+
