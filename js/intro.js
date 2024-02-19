@@ -12,7 +12,6 @@ $(document).ready(function(){
     });
     
 
-
     $("#name").click(function(){
         $("#box").css({
             "background-color": "blue",
@@ -26,9 +25,15 @@ $(document).ready(function(){
 
     $("#reset-btn").click(function () {
         $("#box").hide();
-        $("#box").css("width", ""); 
-        $("#box").css("background-color", ""); 
         $("#box").css("animation", "");
+        
+        $("#box").css({
+            "width": "",
+            "background-color": "",
+            "animation": "",
+            "border-radius": "",  
+            "height": "" 
+        });
     });
 
 });
