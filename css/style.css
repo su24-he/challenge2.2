@@ -14,7 +14,8 @@
     padding-top: 2%;
 }
 
-#change-bg-color{
-    color: brown;
-    margin-top: 3%;
+#box {
+        background-color: lightblue;
+        margin: 40px;
+        padding: 100px;
 }
